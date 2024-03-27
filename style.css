@@ -1,0 +1,195 @@
+.leftSection-chatbox.mt-5.p-3 {
+    border: 1px solid #E9E9E9;
+    border-radius: 13px;
+    box-shadow: 0px 0px 2px 1px #E9E9E9;
+}
+
+
+
+select#countryCode {
+    background: #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+
+input#phoneNumber {
+    background: #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+
+textarea#message {
+    background: #EEEEEE;
+    border: 1px solid #EEEEEE;
+}
+
+
+button.form-control.mt-4 {
+    border-radius: 27px;
+    border: 1px solid #00B66C;
+    background-color: #00B66C;
+    color: white;
+    height: 43px;
+}
+
+button.form-control:hover {
+    background: black;
+}
+/* ------------------left mobile section-------------------- */
+
+.mobile-view.mt-5 {
+    border: 1px solid #E9E9E9;
+    width: 303px;
+    height: 532px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 2px 1px #E9E9E9;
+}
+.mobile-view-display {
+    border: 1px solid grey;
+    height: 90%;
+    background: url(./images/wallppr.jpg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    position: relative;
+}
+
+.number-border {
+    background: #EDEDED;
+    padding: 7px;
+}
+
+.profile-img img {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.whatsapp-text-textBox {
+    border: 1px solid #fff;
+    background-color: white;
+    border-radius: 30px;
+    width: 225px;
+}
+.whatsapp-text {
+    position: absolute;
+    bottom: 0px;
+    width: 284px;
+    padding: 8px;
+    background: #EDEDED;
+}
+
+.sent-img img {
+    width: 35px;
+    margin: 0 0px 0px -32px;
+}
+
+
+.input-mobile-sent {
+  
+    height: 24px;
+    overflow: hidden;
+}
+
+div#messageSent {
+    padding: 10px;
+    background: #E1FFC7;
+    position: absolute;
+    max-width: max-content;
+    width: 90% !important;
+    right: 10px;
+    overflow-wrap: break-word;
+    bottom: 60px;
+    font-size: 11px;
+    border: 1px solid #DCF8C6;
+    border-radius: 11px;
+}
+
+
+div#result {
+    text-align: center;
+}
+
+div#result img {
+    width: 215px;
+}
+
+div#result a {
+    text-decoration: none;
+}
+
+
+div#result {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.mobile-view-display.mt-4.mb-4 {
+    border: 1px solid #E9E9E9;
+}
+
+.waLink-box {
+    border: 1px solid #F6F6F6;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 1px #e0dede;
+    border-radius: 11px;
+}
+
+
+input.form-control {
+    padding: 14px;
+    background: #EEEEEE;
+}
+
+.waLink-Button button {
+    padding: 11px;
+    width: 214px;
+    border: 1px solid #00B66C;
+    background: #00B66C;
+    color: white;
+    border-radius: 25px;
+}
+
+
+
+.view {
+    position: relative;
+    top: 250px;
+    left: 35px;
+    width: 200px !important;
+}
+
+.view p {
+    margin: 0px;
+    position: relative;
+    left: -8px;
+    top: 5px;
+}
+
+
+
+/* animation */
+
+  @keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px); /* Adjust the value as needed for the desired distance */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.greater_than {
+    color: #36F06C;
+    text-align: center;
+    animation: slideAnimation 2s linear infinite;
+}
+
+/* end */
+
+.whatsapp-text-textBox label {
+    padding-left: 9px;
+}
+
+i.fa-solid.fa-arrow-down.fa-arrow-down.arrow_down {
+    display: none;
+}

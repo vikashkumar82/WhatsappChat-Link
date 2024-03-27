@@ -1,0 +1,94 @@
+@media only screen and (max-width: 767px){
+
+    .mobile-view.mt-5 {
+        border: 0px solid #E9E9E9;
+        width: 303px;
+        height: 537px;
+        border-radius: 14px;
+        box-shadow: 0px 0px 2px 1px #E9E9E9;
+        margin-left: 29px;
+    }
+
+    .number-border {
+        background: #EDEDED;
+        padding: 7px;
+        height: 62px;
+    }
+
+    .sent-img {
+        margin-top: -34px;
+        margin-left: 266px;
+    }
+
+    label#countryCodeNumber {
+        display: block;
+        margin-top: -35px;
+        margin-left: 50px;
+    }
+
+    label#userPhoneNumber {
+        margin-top: -35px;
+        margin-left: 93px;
+    }
+
+    label#status {
+        margin-top: -12px;
+        margin-left: 46px;
+    }
+
+    .waLink-Button button {
+        padding: 11px;
+        width: 214px;
+        border: 1px solid #00B66C;
+        background: #00B66C;
+        color: white;
+        border-radius: 25px;
+        margin-left: 55px;
+    }
+
+    .view {
+        position: relative;
+            top: -40px;
+        width: 200px;
+    }
+    .font-div {
+        position: relative;
+        left: 105px;
+        top: 23px;
+    }
+
+    .font-div i {
+        margin-left: 36px;
+    }
+
+ 
+    i.fa-solid.fa-arrow-right-long.fa-2xl.greater_than {
+        display: none;
+    }
+
+    i.fa-solid.fa-arrow-down.fa-arrow-down.arrow_down {
+        display: inline-block;
+    }
+
+    .view {
+        margin-bottom: -34px;
+    }
+
+    /* --------------------animation--------------------- */
+    @keyframes arrowBounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .arrow_down {
+        animation: arrowBounce 2s infinite;
+    }
+    /* ----------------end-------------------------- */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check Number</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Check Number</h2>
+    <form id="number-form">
+        <input type="text" id="phone" name="phone" placeholder="Enter Phone Number">
+        <button type="submit">Check</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+    document.getElementById('number-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var phone = document.getElementById('phone').value;
+
+        if (!phone) {
+            return;
+        }
+
+        var result = document.getElementById('result');
+        result.innerHTML = '';
+
+        var apiURL = `https://phone.infinityfreeapp.com/api/number?phone=${phone}`;
+
+        fetch(apiURL)
+            .then(response => response.json())
+            .then(data => {
+                if (data.valid) {
+                    if (data.service === 'whatsapp') {
+                        result.innerHTML = `Phone number <b>${phone}</b> is valid and exists in WhatsApp.`;
+                    } else {
+                        result.innerHTML = `Phone number <b>${phone}</b> is valid, but it doesn't exist in WhatsApp.`;
+                    }
+                } else {
+                    result.innerHTML = `Phone number <b>${phone}</b> is not valid.`;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                result.innerHTML = 'Something went wrong. Please try again later.';
+            });
+    });
+</script>
+</body>
+</html>
